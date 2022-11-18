@@ -10,7 +10,7 @@ const Home = () => {
   const {tasks, dispatch} = useTasksContext()
   const {user} = useAuthContext()
 
-  const backURL= 'https://mern-app-back-production.up.railway.app/'
+  const backURL= 'https://mern-app-back-production.up.railway.app'
 
   useEffect(() => {
     const fetchTasks = async () => {

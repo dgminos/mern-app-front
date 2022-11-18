@@ -6,7 +6,7 @@ export const useSignup = () => {
   const [isLoading, setIsLoading] = useState(null)
   const { dispatch } = useAuthContext()
 
-  const backURL= 'https://mern-app-back-production.up.railway.app/'
+  const backURL= 'https://mern-app-back-production.up.railway.app'
 
   const signup = async (email, password) => {
     setIsLoading(true)

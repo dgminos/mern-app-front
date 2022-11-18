@@ -16,7 +16,7 @@ const EditTaskForm = ({ theTask }) => {
   const [error, setError] = useState(null)
   const [emptyFields, setEmptyFields] = useState([])
 
-  const backURL= 'https://mern-app-back-production.up.railway.app/'
+  const backURL= 'https://mern-app-back-production.up.railway.app'
 
   const handleSubmit = async (e) => {
     e.preventDefault()

@@ -18,7 +18,7 @@ const TaskDetails = ({ task }) => {
   const handleShow = () => setShow(true)
   const handleClose = () => setShow(false)
 
-  const backURL= 'https://mern-app-back-production.up.railway.app/'
+  const backURL= 'https://mern-app-back-production.up.railway.app'
 
   useEffect(() => {
     return () => handleClose()
