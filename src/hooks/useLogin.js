@@ -5,7 +5,7 @@ export const useLogin = () => {
   const [error, setError] = useState(null)
   const [isLoading, setIsLoading] = useState(null)
   const { dispatch } = useAuthContext()
-  const { user } = useAuthContext()
+  //const { user } = useAuthContext()
 
   const backURL= 'https://mern-app-back-production.up.railway.app/'
 
@@ -15,8 +15,7 @@ export const useLogin = () => {
 
     const response = await fetch('backURL/api/users/login', {
       method: 'POST',
-      headers: {'Content-Type': 'application/json',
-      'Authorization': `Bearer ${user}`},
+      headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ email, password })
     })
     
