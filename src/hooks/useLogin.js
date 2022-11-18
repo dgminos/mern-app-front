@@ -16,7 +16,7 @@ export const useLogin = () => {
     const response = await fetch('backURL/api/users/login', {
       method: 'POST',
       headers: {'Content-Type': 'application/json',
-      'Authorization': `Bearer ${user.token}`},
+      'Authorization': `Bearer ${user}`},
       body: JSON.stringify({ email, password })
     })
     
