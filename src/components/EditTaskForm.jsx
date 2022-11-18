@@ -47,7 +47,7 @@ const EditTaskForm = ({ theTask }) => {
     if (response.ok) {
       dispatch({type: 'UPDATE_TASK', payload: json})
       const fetchTasks = async () => {
-        const response = await fetch('backURL/api/tasks', {
+        const response = await fetch(backURL+'/api/tasks', {
           headers: {'Authorization': `Bearer ${user.token}`},
         })
         const json = await response.json()
