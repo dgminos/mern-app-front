@@ -25,7 +25,7 @@ const TaskForm = () => {
 
     const task = {title, createdBy, description}
 
-    const response = await fetch('backURL/api/tasks', {
+    const response = await fetch(backURL+'/api/tasks', {
       method: 'POST',
       body: JSON.stringify(task),
       headers: {

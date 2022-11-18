@@ -27,7 +27,7 @@ const EditTaskForm = ({ theTask }) => {
       return
     }
 
-    const response = await fetch('backURL/api/tasks/'+ theTask._id, {
+    const response = await fetch(backURL+'/api/tasks/'+ theTask._id, {
       method: 'PUT',
       body: JSON.stringify(updatedTask),
       headers:{
