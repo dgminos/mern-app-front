@@ -18,7 +18,7 @@ const TaskDetails = ({ task }) => {
   const handleShow = () => setShow(true)
   const handleClose = () => setShow(false)
 
-  const backURL= 'https://mern-todo-app-back-884n-dev.fl0.io/'
+  const backURL= 'https://mern-todo-app-back-884n-dev.fl0.io'
 
   useEffect(() => {
     return () => handleClose()
