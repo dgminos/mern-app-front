@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { useState } from 'react'
 import { useTasksContext } from '../hooks/useTasksContext'
 import { useAuthContext } from '../hooks/useAuthContext'

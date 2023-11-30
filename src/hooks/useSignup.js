@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { useState } from 'react'
 import { useAuthContext } from './useAuthContext'
 

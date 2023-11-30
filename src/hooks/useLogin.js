@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { useState } from 'react'
 import { useAuthContext } from './useAuthContext'
 
@@ -7,6 +8,7 @@ export const useLogin = () => {
   const { dispatch } = useAuthContext()
 
   const backURL = process.env.BACKURL
+  console.log(backURL)
 
   const login = async (email, password) => {
     setIsLoading(true)
