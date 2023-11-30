@@ -7,7 +7,6 @@ export const useLogin = () => {
   const { dispatch } = useAuthContext()
 
   const backURL = process.env.REACT_APP_BACKURL
-  console.log(backURL)
 
   const login = async (email, password) => {
     setIsLoading(true)
