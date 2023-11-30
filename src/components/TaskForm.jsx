@@ -1,4 +1,3 @@
-import 'dotenv/config'
 import { useState } from "react"
 import { useTasksContext } from "../hooks/useTasksContext"
 import { useAuthContext } from '../hooks/useAuthContext'
@@ -14,7 +13,7 @@ const TaskForm = () => {
   const [error, setError] = useState(null)
   const [emptyFields, setEmptyFields] = useState([])
 
-  const backURL = process.env.BACKURL
+  const backURL = process.env.REACT_APP_BACKURL
 
   const handleSubmit = async (e) => {
     e.preventDefault()

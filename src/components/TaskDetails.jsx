@@ -1,4 +1,3 @@
-import 'dotenv/config'
 import { useState, useEffect } from "react"
 import { useTasksContext } from '../hooks/useTasksContext'
 import { useAuthContext } from '../hooks/useAuthContext'
@@ -19,7 +18,7 @@ const TaskDetails = ({ task }) => {
   const handleShow = () => setShow(true)
   const handleClose = () => setShow(false)
 
-  const backURL = process.env.BACKURL
+  const backURL = process.env.REACT_APP_BACKURL
 
   useEffect(() => {
     return () => handleClose()

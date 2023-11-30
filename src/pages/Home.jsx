@@ -1,4 +1,3 @@
-import 'dotenv/config'
 import { useEffect }from 'react'
 import { useTasksContext } from "../hooks/useTasksContext"
 import { useAuthContext } from "../hooks/useAuthContext"
@@ -11,7 +10,7 @@ const Home = () => {
   const {tasks, dispatch} = useTasksContext()
   const {user} = useAuthContext()
 
-  const backURL = process.env.BACKURL
+  const backURL = process.env.REACT_APP_BACKURL
 
   useEffect(() => {
     const fetchTasks = async () => {
