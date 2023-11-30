@@ -13,7 +13,7 @@ const TaskForm = () => {
   const [error, setError] = useState(null)
   const [emptyFields, setEmptyFields] = useState([])
 
-  const backURL= 'https://mern-app-back-dev-ahee.1.us-1.fl0.io'
+  const backURL = process.env.BACKURL
 
   const handleSubmit = async (e) => {
     e.preventDefault()

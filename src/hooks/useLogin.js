@@ -5,9 +5,8 @@ export const useLogin = () => {
   const [error, setError] = useState(null)
   const [isLoading, setIsLoading] = useState(null)
   const { dispatch } = useAuthContext()
-  //const { user } = useAuthContext()
 
-  const backURL= 'https://mern-app-back-dev-ahee.1.us-1.fl0.io'
+  const backURL = process.env.BACKURL
 
   const login = async (email, password) => {
     setIsLoading(true)

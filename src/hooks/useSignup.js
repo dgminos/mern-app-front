@@ -6,7 +6,7 @@ export const useSignup = () => {
   const [isLoading, setIsLoading] = useState(null)
   const { dispatch } = useAuthContext()
 
-  const backURL= 'https://mern-app-back-dev-ahee.1.us-1.fl0.io'
+  const backURL = process.env.BACKURL
 
   const signup = async (email, password) => {
     setIsLoading(true)
